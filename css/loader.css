@@ -1,0 +1,89 @@
+
+.loader{
+    position: fixed;
+    background-color: #0d0121;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10001;
+}
+
+#loader{
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    background: url(/loader.gif) no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.fade{
+    animation: fade 2s;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+    5%{
+        opacity: .95;
+    }
+    10%{
+        opacity: .9;
+    }
+    15%{
+        opacity: .85;
+    }
+    20%{
+        opacity: .8;
+    }
+    25%{
+        opacity: .75;
+    }
+    30%{
+        opacity: .7;
+    }
+    35%{
+        opacity: .65;
+    }
+    40%{
+        opacity: .6;
+    }
+    45%{
+        opacity: .55;
+    }
+    50%{
+        opacity: .5;
+    }
+    55%{
+        opacity: .45;
+    }
+    60%{
+        opacity: .4;
+    }
+    65%{
+        opacity: .35;
+    }
+    70%{
+        opacity: .3;
+    }
+    75%{
+        opacity: .25;
+    }
+    80%{
+        opacity: .2;
+    }
+    85%{
+        opacity: .15;
+    }
+    90%{
+        opacity: .1;
+    }
+    95%{
+        opacity: .05;
+    }
+    100%{
+        opacity: 0;
+    }
+}
