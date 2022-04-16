@@ -177,7 +177,7 @@ if(window.localStorage.length !== 0){
     let wrapQuantity = document.getElementsByClassName('buy__handle-quantity');
     for(let i=0; i<wrapQuantity.length; i++){
         wrapQuantity[i].children[0].onclick = function(){
-            let code = window.localStorage.key(i-1);
+            let code = window.localStorage.key(i);
             let quatity = parseInt(wrapQuantity[i].children[1].value);
             if(quatity-1===0){
                 window.localStorage.removeItem(code);
@@ -188,7 +188,7 @@ if(window.localStorage.length !== 0){
             location.reload();
         };
         wrapQuantity[i].children[2].onclick = function(){
-            let code = window.localStorage.key(i-1);
+            let code = window.localStorage.key(i);
             let quatity = parseInt(wrapQuantity[i].children[1].value);
             if(quatity+1<100){
                 window.localStorage.setItem(code, quatity+1);
@@ -208,10 +208,10 @@ if(window.localStorage.length !== 0){
         wrapQuantity[i].children[1].onkeypress = function(){
             let e = window.event;
             var keyCode = e.key;
-            if (keyCode == 'Enter'){
+            if (keyCode == 'Enter' && wrapQuantity[i].children[1].value != null){
                 wrapQuantity[i].children[1].value;
 
-                let code = window.localStorage.key(i-1);
+                let code = window.localStorage.key(i);
                 let quantity = parseInt(wrapQuantity[i].children[1].value);
                 
                 if(quantity<100){
