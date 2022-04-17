@@ -5,11 +5,17 @@
 2.Màu chủ đạo và mã màu trog file main-color.jpg với 2 màu đầu và cuối sẽ chiếm hầu hết trong trang web còn các màu ở giữa dùng cho button, a hoặc các icon tùy trường hợp.
 
 3.Giao diện web có tổng cộng 6 trang:
+	
 	+Trang chủ
+	
 	+Trang các sản phẩm (Hào)
+	
 	+Trang sản phẩm(dành riêng cho mỗi sản phẩm (có template mẫu là file single-product.png)) (Hào)
+	
 	+Trang liên hệ
+	
 	+Trang giới thiệu
+	
 	+Đăng nhập, đăng kí (thiết kế theo kiểu chung 1 trang nhưng có 2 form bấm vào form nào hiện form đó)
 
 4.Phần header và footer sẽ dùng chung cho tất cả các trang(header có logo và thanh nav-bar nhưng footer vẫn chưa biết nội dung là gì). (Hào)
@@ -28,6 +34,7 @@
 
 
 8.Một số ràng buộc về header:
+
 _Thuộc tính href của các thẻ a trong thanh navigation sẽ lần lượt là:
 
 	+index.html
