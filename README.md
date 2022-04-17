@@ -19,6 +19,7 @@
 6.Dùng thuần javascript.
 
 7.Tài khoản 000webhostapp.com: 
+
 	+Username: lvnhut2410@gmail.com
 	+Password: LeCongHao5(viết in giống y chang)
 
@@ -28,9 +29,15 @@
 
 8.Một số ràng buộc về header:
 _Thuộc tính href của các thẻ a trong thanh navigation sẽ lần lượt là:
+
 	+index.html
+
 	+about.html
+
 	+contact.html
+
 	+acount.html
+
 	+products.html
+	
 	+Giỏ hàng: cart.html
