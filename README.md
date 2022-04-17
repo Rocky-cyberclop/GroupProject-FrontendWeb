@@ -33,5 +33,4 @@ _Thuộc tính href của các thẻ a trong thanh navigation sẽ lần lượt
 	+contact.html
 	+acount.html
 	+products.html
-
 	+Giỏ hàng: cart.html
