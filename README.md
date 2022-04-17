@@ -24,3 +24,14 @@
 
 	+Tên web: Shopgiaysinhvien (shopgiaysinhvien.000webhostapp.com)
 	+Pass: LeCongHao5
+
+
+8.Một số ràng buộc về header:
+_Thuộc tính href của các thẻ a trong thanh navigation sẽ lần lượt là:
+	+index.html
+	+about.html
+	+contact.html
+	+acount.html
+	+products.html
+
+	+Giỏ hàng: cart.html
