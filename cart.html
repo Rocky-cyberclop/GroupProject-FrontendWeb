@@ -81,16 +81,30 @@
 
                     </div>
                 </section>
-                <section class="buy display--block">
+                <section class="buy display--flex flex--column justify-content--space-between">
                     <div class="sale display--flex">
                         <div class="sale__header">
                             <i class="fa-brands fa-adversal"></i>
                         </div>
                         <div class="sale__body">
                             <h4>Khung giờ giảm giá</h4>
+                            <ul>
+                                <li>Sáng: Từ 7h đến 11h</li>
+                                <li>Chiều: Từ 13h đến 17h</li>
+                            </ul>
                         </div>
                     </div>
-                    <a href="#" class="display--flex justify-content--center">Buy</a>
+                    <div class="sum display--block">
+                        <div class="sum__header display--flex justify-content--space-between">
+                            <div class="title">Thành tiền</div>
+                            <div class="account">Số tiền</div>
+                        </div>
+                        <div class="sum__body display--flex justify-content--space-between">
+                            <h4 class="title display--flex">Tổng số tiền</h4>
+                            <h4 class="account">Số tiền</h4>
+                        </div>
+                        <div class="display--flex justify-content--center align-item--center"><button href="#" class="btn-buy text--bold btn btn-primary">Buy</button></div>
+                    </div>
                 </section>
             </article>
        </div>
@@ -110,6 +124,6 @@
         </div>
     </footer>
     <script src="js/loader.js" defer type="text/javascript"></script>
-    <script src="js/handle-list.js" defer defer type="text/javascript"></script>
+    <script src="js/handle-list.js" defer type="text/javascript"></script>
 </body>
 </html>

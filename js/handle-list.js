@@ -230,3 +230,33 @@ if(window.localStorage.length !== 0){
         }   
     }
 }
+
+
+
+
+
+
+
+if(window.localStorage.length !== 0){
+    let sum = 0;
+    for(let i=0; i<window.localStorage.length; i++){
+        let code = window.localStorage.key(i);
+        let quantity = window.localStorage.getItem(code);
+        sum += products[code].price*quantity;
+    }
+    document.getElementsByClassName('account')[0].innerHTML = sum + '$';
+    
+    // get time to make discount
+    // Get current time
+    sum*=1.1;
+    const now = new Date();
+    document.getElementsByClassName('account')[1].innerHTML = parseInt(sum - (sum * (now.getHours()/100))) + '$';
+    
+    const interval = setInterval(() => {
+        const now = new Date();
+        second = now.getSeconds();
+        let finalSum = sum - (sum * (now.getHours()/100));
+        document.getElementsByClassName('account')[1].innerHTML = parseInt(finalSum) + '$';
+    }, 1000);    
+    
+}

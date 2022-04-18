@@ -4,16 +4,14 @@ main{
     min-height: 480px;
 }
 
-article{
-    /* color: cornsilk; */
-}
-
 .des{
     width: 60%;
 }
 
 .des__title,
-.des__product{
+.des__product,
+section .sale,
+section .sum{
     background-color: #4877a0;
     padding: 10px;
     border-radius: 10px;
@@ -74,12 +72,22 @@ article{
 }
 
 .buy{
-    width: 30%;
+    max-height: 300px;
+    width: 35%;
 }
 
 .product__info{
     flex-direction: column;
 }
 
+.sale__header{
+    margin-right: 20px;
+}
 
+.sum__header{
+    border-bottom: 1px #333 solid;
+}
 
+.sum__body{
+    margin-top: 10px;
+}
