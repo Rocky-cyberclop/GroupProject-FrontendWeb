@@ -56,3 +56,7 @@ a{
 .align-item--center{
     align-items: center;
 }
+
+.flex--column{
+    flex-direction: column;
+}
