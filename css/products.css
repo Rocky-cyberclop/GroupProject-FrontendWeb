@@ -39,8 +39,20 @@ article .list{
     background-color: #ac0505;
 }
 
+.list:nth-child(1) .container:nth-child(2) .list__item::before{
+    background-color: rgb(63, 63, 221);
+}
+
 .list:nth-child(1) .container:nth-child(3) .list__item::before{
-    background-color: rgb(184, 183, 183);
+    background-color: rgb(201, 200, 200);
+}
+
+.list:nth-child(2) .container:nth-child(1) .list__item::before{
+    background-color: rgb(105, 104, 104);
+}
+
+.list:nth-child(2) .container:nth-child(2) .list__item::before{
+    background-color: rgb(37, 37, 37);
 }
 
 .list:nth-child(2) .container:nth-child(3) .list__item::before{
@@ -51,8 +63,24 @@ article .list{
     background-color: rgb(190, 190, 50);
 }
 
-.list:nth-child(4) .container:nth-child(2) .list__item::before{
+.list:nth-child(3) .container:nth-child(2) .list__item::before{
     background-color: rgb(253, 68, 99);
+}
+
+.list:nth-child(3) .container:nth-child(3) .list__item::before{
+    background: linear-gradient(rgb(63, 63, 236),rgb(177, 2, 2));
+}
+
+.list:nth-child(4) .container:nth-child(1) .list__item::before{
+    background: linear-gradient(360deg,rgb(50, 50, 184),rgb(185, 180, 180));
+}
+
+.list:nth-child(4) .container:nth-child(2) .list__item::before{
+    background-color: rgb(219, 164, 174);
+}
+
+.list:nth-child(4) .container:nth-child(3) .list__item::before{
+    background-color: rgb(24, 214, 24);
 }
 
 .container:hover > .list__item::before{
@@ -85,6 +113,46 @@ article .list{
 .list__item:hover img{
     top: 10%;
     transform: rotate(-45deg);
+}
+
+.list:nth-child(1) .container:nth-child(2) img{
+    width: 270px;
+    left: 10%;
+}
+
+.list:nth-child(2) .container:nth-child(1) img{
+    top: 20%;
+}
+
+.list:nth-child(2) .container:nth-child(2) img{
+    width: 270px;
+    left: 10%;
+}
+
+.list:nth-child(4) .container:nth-child(1) img{
+    transform: rotate3d(0,1,0,180deg);
+    top: 50%;
+}
+
+.list:nth-child(4) .container:nth-child(3) img{
+    width: 270px;
+    transform: rotate3d(0,1,0,180deg);
+    top: 30%;
+    left: 5%;
+}
+
+.list:nth-child(2) .container:nth-child(1):hover img{
+    top: -5%;
+}
+
+.list:nth-child(4) .container:nth-child(1):hover img{
+    transform: rotate3d(.5,1,0,180deg);
+    top: 20%;
+}
+
+.list:nth-child(4) .container:nth-child(3):hover img{
+    transform: rotate3d(.5,1,0,180deg);
+    top: 0;
 }
 
 .list__item .item__descrip{
