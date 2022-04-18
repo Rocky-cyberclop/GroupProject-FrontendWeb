@@ -250,13 +250,24 @@ if(window.localStorage.length !== 0){
     // Get current time
     sum*=1.1;
     const now = new Date();
-    document.getElementsByClassName('account')[1].innerHTML = parseInt(sum - (sum * (now.getHours()/100))) + '$';
+
+    if((now.getHours()>=7 && now.getHours()<=11)||(now.getHours()>=13 && now.getHours()<=17)){
+        document.getElementsByClassName('account')[1].innerHTML = parseInt(sum - (sum * (now.getHours()/100))) + '$';
+    }
+    else{
+        document.getElementsByClassName('account')[1].innerHTML = parseInt(sum) + '$';
+    }
     
     const interval = setInterval(() => {
         const now = new Date();
-        second = now.getSeconds();
-        let finalSum = sum - (sum * (now.getHours()/100));
-        document.getElementsByClassName('account')[1].innerHTML = parseInt(finalSum) + '$';
+        hours = now.getHours();
+        if((hours>=7 && hours<=11)||(hours>=13 && hours<=17)){
+            let finalSum = sum - (sum * (now.getHours()/100));
+            document.getElementsByClassName('account')[1].innerHTML = parseInt(finalSum) + '$';
+        }
+        else{
+            document.getElementsByClassName('account')[1].innerHTML = parseInt(sum) + '$';
+        }
     }, 1000);    
     
 }
