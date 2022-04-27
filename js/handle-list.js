@@ -54,7 +54,12 @@ function makeListProducts(item){
     // create img tag
     let img = document.createElement('img');
     img.src = item.photo;
-    img.width = 200;
+    if(window.innerWidth<860){
+        img.width = 100;
+    }
+    else{
+        img.width = 200;
+    }
     // create info div
     let productInfo = document.createElement('div');
     productInfo.className = 'product__info display--flex justify-content--space-between';
