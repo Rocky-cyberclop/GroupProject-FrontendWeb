@@ -1,5 +1,15 @@
 
+header{
+    position: fixed;
+    z-index: 10011;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: .3s ease;
+}
+
 nav{
+    transition: .5s ease;
     padding: 40px 0px;
     justify-content: space-around;
 }
@@ -66,4 +76,16 @@ nav{
     background-color: #f8b195;
     overflow: hidden;
     box-shadow: 1px 1px 5px 5px #f8b195;
+}
+
+.sticky nav{
+    padding: 10px 0;
+}
+.sticky{
+    background-color: #6c5b7b;
+    padding: 0 50px;
+}
+
+.sticky a{
+    color: black;
 }
