@@ -55,7 +55,7 @@ function makeListProducts(item){
     let img = document.createElement('img');
     img.src = item.photo;
     if(window.innerWidth<860){
-        img.width = 100;
+        img.width = 70;
     }
     else{
         img.width = 200;
