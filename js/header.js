@@ -27,6 +27,8 @@ window.addEventListener('scroll', function(){
 var nav = document.getElementsByTagName('nav');
 var a_nav = document.getElementsByClassName('nav__item__link');
 var header  = document.getElementsByTagName('header');
+var search_input = document.getElementsByClassName('search__input');
+search_input[0].style.width = '130px'
 if(window.innerWidth<860){
     nav[0].children[3].classList.replace('display--flex', 'display--block');
     header[0].classList.remove('container');

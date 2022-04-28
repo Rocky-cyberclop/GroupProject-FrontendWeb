@@ -73,7 +73,7 @@ nav label:hover{
 }
 
 .search__input{
-    margin: 10px;
+    margin: 10px 10px 10px 0;
     border: none;
     background-color: cornsilk;
     width: 150px;
