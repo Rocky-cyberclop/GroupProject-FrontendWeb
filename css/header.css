@@ -134,7 +134,6 @@ nav label:hover{
     
     .logo{
         order: 1;
-        margin-left: 20px;
     }
 
     nav ul{
@@ -177,7 +176,7 @@ nav label:hover{
 
     .cart{
         order: 4;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
 }
