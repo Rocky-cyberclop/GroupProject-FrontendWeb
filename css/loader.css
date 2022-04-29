@@ -6,7 +6,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 10001;
+    z-index: 10111;
 }
 
 #loader{
@@ -16,6 +16,7 @@
     background: url(/loader.gif) no-repeat;
     width: 100%;
     height: 100%;
+    z-index: 10000;
 }
 
 .fade{
@@ -91,7 +92,7 @@
 
 @media screen and (max-width: 860px) {
     #loader{
-        width: 100%;
-        left: -10%;
+        left: -55%;
+        width: 200%;
     }
 }
