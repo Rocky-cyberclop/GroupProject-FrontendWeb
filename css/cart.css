@@ -8,6 +8,10 @@ main{
     width: 60%;
 }
 
+.container article{
+    flex-wrap: wrap;
+}
+
 .des__title,
 .des__product,
 section .sale,
@@ -90,4 +94,38 @@ section .sum{
 
 .sum__body{
     margin-top: 10px;
+}
+
+@media screen and (max-width: 860px) {
+    .des,
+    .buy{
+        width: 100%;
+    }
+
+    .des h6{
+        width: 100px;
+    }
+
+    .des h4,
+    .des h5,
+    .des h6,
+    .des input{
+        font-size: 12px;
+    }
+
+    .product__buy__del{
+        display: block;
+    }
+
+    .btn{
+        padding: 5px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    .des input{
+        height: 25px;
+        width: 25px;
+    }
 }
