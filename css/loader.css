@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 860px) {
     #loader{
-        left: -40%;
+        left: -45%;
         width: 200%;
     }
 }
