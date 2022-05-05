@@ -22,6 +22,10 @@ article .list{
     box-shadow: 5px 5px 5px 3px #333;
 }
 
+.list__item > p{
+    display: none;
+}
+
 .list__item::before{
     content: '';
     clip-path: circle(150px at 80% 20%);
@@ -166,12 +170,14 @@ article .list{
 .list__item:hover .item__descrip{
     top: 60%;
     opacity: 1;
+    visibility: initial;
 }
 
 .item__descrip{
     color: cornsilk;
     transition: .5s ease;
     opacity: 0;
+    visibility: hidden;
 }
 
 .item__descrip span{
@@ -225,4 +231,23 @@ article .list{
 
 .item__descrip .btn--buy:hover{
     background-color: #ccc;
+}
+
+
+
+@media screen and (max-width: 860px) {
+    .list .container{
+        width: 100%;
+        margin-bottom: 20px;
+    }   
+
+    .list__item > p{
+        display: block;
+        color: cornsilk;
+        position: absolute;
+        left: 45%;
+        top: 83%;
+        font-weight: bold;
+    }
+    
 }
