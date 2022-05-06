@@ -16,7 +16,7 @@ main{
 .des__product,
 section .sale,
 section .sum{
-    background-color: #4877a0;
+    background-color: var(--float);
     padding: 10px;
     border-radius: 10px;
     margin: 10px 0;
@@ -47,12 +47,12 @@ section .sum{
 
 .btn-outline-main-color{
     outline: none;
-    border: 1px #333 solid;
+    border: 1px var(--border) solid;
 }
 
 .btn-outline-main-color:hover{
-    background-color: #333;
-    color: cornsilk;
+    background-color: var(--border);
+    color: var(--text);
 }
 
 .product__buy > h6{
@@ -67,7 +67,7 @@ section .sum{
 }
 
 .product__buy__del:hover{
-    color: #f8b195;
+    color: var(--auxiliary);
     cursor: pointer;
 }
 
@@ -89,7 +89,7 @@ section .sum{
 }
 
 .sum__header{
-    border-bottom: 1px #333 solid;
+    border-bottom: 1px var(--border) solid;
 }
 
 .sum__body{

@@ -5,9 +5,9 @@ footer{
 
 .list-social__item__link:hover{
     cursor: pointer;
-    color: rgb(37, 28, 28);
-    background-color: #f8b195;
-    box-shadow: 1px 1px 5px 5px #f8b195;
+    color: var(--footer-a);
+    background-color: var(--auxiliary);
+    box-shadow: 1px 1px 5px 5px var(--auxiliary);
     transition: .3s ease;
     border-radius: 50px;
 }

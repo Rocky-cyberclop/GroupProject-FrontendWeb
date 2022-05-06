@@ -1,6 +1,25 @@
+:root{
+    --main: #355c7d;
+    --auxiliary: #f8b195;
+    --auxiliary-bold: #f672a0;
+    --text: cornsilk;
+    --text-1: aliceblue;
+    --float: #4877a0;
+    --border: #333;
+    --hover-size: #ccc;
+    --sticky-header: #6c5b7b;
+    --sticky-a: black;
+    --hover-sticky-a: #866f99;
+    --footer-a: rgb(37, 28, 28);
+    --item-product: rgb(67, 102, 155);
+    --item-product-logo: rgba(255, 255, 255, 0.04);
+    --item-product-color-red: #e91e63;
+    --item-product-color-blue: #0389f4;
+    --item-product-color-green: #9bdc28;
+}
 
 body{
-    background-color: #355c7d;
+    background-color: var(--main);
 }
 
 main{
@@ -14,11 +33,11 @@ a{
 }
 
 .text-color--main{
-    color: #f8b195;
+    color: var(--auxiliary);
 }
 
 .text-color--white{
-    color: cornsilk;
+    color: var(--text);
 }
 
 .text--bold{

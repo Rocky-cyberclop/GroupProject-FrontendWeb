@@ -39,7 +39,7 @@ nav label:hover{
 }
 
 .nav__item__link:hover{
-    color: #f8b195;
+    color: var(--auxiliary);
 }
 
 .nav__item__link::after{
@@ -55,7 +55,7 @@ nav label:hover{
     height: 5%;
     left: 0;
     bottom: 0;
-    background-color: #f672a0;
+    background-color: var(--auxiliary-bold);
 }
 
 .search{
@@ -63,7 +63,7 @@ nav label:hover{
 }
 
 .search-box{
-    background-color: cornsilk;
+    background-color: var(--text);
     border-radius: 50px;
     transition: .3s ease;
 }
@@ -75,35 +75,35 @@ nav label:hover{
 .search__input{
     margin: 10px 10px 10px 0;
     border: none;
-    background-color: cornsilk;
+    background-color: var(--text);
     width: 150px;
     outline: none;
 }
 
 .cart{
     margin-left: 5px;
-    background-color: #f672a0;
+    background-color: var(--auxiliary-bold);
     height: 100%;
     border-radius: 50%;
 }
 
 .cart:hover{
-    color: cornsilk;
-    background-color: #f8b195;
+    color: var(--text);
+    background-color: var(--auxiliary);
     overflow: hidden;
-    box-shadow: 1px 1px 5px 5px #f8b195;
+    box-shadow: 1px 1px 5px 5px var(--auxiliary);
 }
 
 .sticky nav{
     padding: 10px 0;
 }
 .sticky{
-    background-color: #6c5b7b;
+    background-color: var(--sticky-header);
     padding: 0 50px;
 }
 
 .sticky a{
-    color: black;
+    color: var(--sticky-a);
 }
 
 
@@ -112,7 +112,7 @@ nav label:hover{
 @media screen and (max-width: 860px) {
 
     header{
-        background-color: #6c5b7b;
+        background-color: var(--sticky-header);
         padding: 0;
         margin: 0;
     }
@@ -141,7 +141,7 @@ nav label:hover{
         left: 0;
         top: 100%;
         width: 100%;
-        background-color: #6c5b7b;
+        background-color: var(--sticky-header);
     }
 
     .search{
@@ -162,11 +162,11 @@ nav label:hover{
 
     .nav__item__link{
         width: 100%;
-        border-bottom: 1px solid #f672a0;
+        border-bottom: 1px solid var(--auxiliary-bold);
     }
 
     .nav__item__link:hover{
-        background-color: #866f99;
+        background-color: var(--hover-sticky-a);
     }
 
     .nav__item__link::before,

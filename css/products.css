@@ -18,8 +18,8 @@ article .list{
     position: relative;
     overflow: hidden;
     border-radius: 20px;
-    background-color: rgb(67, 102, 155);
-    box-shadow: 5px 5px 5px 3px #333;
+    background-color: var(--item-product);
+    box-shadow: 5px 5px 5px 3px var(--border);
 }
 
 .list__item > p{
@@ -95,7 +95,7 @@ article .list{
     z-index: 1;
     content: 'Nike';
     position: absolute;
-    color: rgba(255, 255, 255, 0.04);
+    color: var(--item-product-logo);
     top: 30%;
     left: -20%;
     width: 100%;
@@ -174,7 +174,7 @@ article .list{
 }
 
 .item__descrip{
-    color: cornsilk;
+    color: var(--text);
     transition: .5s ease;
     opacity: 0;
     visibility: hidden;
@@ -182,7 +182,7 @@ article .list{
 
 .item__descrip span{
     justify-content: center;
-    color: black;
+    color: var(--sticky-a);
     width: 26px;
     height: 26px;
     padding: 0px 5px;
@@ -194,12 +194,12 @@ article .list{
 }
 
 .item__descrip .size span{
-    background-color: aliceblue;
+    background-color: var(--text-1);
     border-radius: 5px;
 }
 
 .item__descrip .size span:hover{
-    background-color: #ccc;
+    background-color: var(--hover-size);
     cursor: pointer;
 }
 
@@ -211,15 +211,15 @@ article .list{
 }
 
 .item__descrip .color span:nth-child(2){
-    background-color: #e91e63;
+    background-color: var(--item-product-color-red);
 }
 
 .item__descrip .color span:nth-child(3){
-    background-color: #0389f4;
+    background-color: var(--item-product-color-blue);
 }
 
 .item__descrip .color span:nth-child(4){
-    background-color: #9bdc28;
+    background-color: var(--item-product-color-green);
 }
 
 .item__descrip .btn--buy{
@@ -230,7 +230,7 @@ article .list{
 }
 
 .item__descrip .btn--buy:hover{
-    background-color: #ccc;
+    background-color: var(--hover-size);
 }
 
 
