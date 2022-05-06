@@ -65,6 +65,9 @@ const products = {
         product_hover[i].addEventListener('mouseover', ()=>{
             product_hover[i].classList.add('list--hover');
         });
+        product_hover[i].addEventListener('click', ()=>{
+            product_hover[i].classList.add('list--hover');
+        });
         product_hover[i].addEventListener('mouseout', ()=>{
             product_hover[i].classList.remove('list--hover');
         });
