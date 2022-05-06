@@ -128,4 +128,8 @@ section .sum{
         height: 25px;
         width: 25px;
     }
+
+    .btn-buy{
+        padding: 20px;
+    }
 }

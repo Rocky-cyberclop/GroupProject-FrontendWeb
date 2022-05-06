@@ -60,5 +60,19 @@ const products = {
     }
 
 
+    var product_hover = document.querySelectorAll('.list > .container');
+    for(let i=0; i<product_hover.length; i++){
+        product_hover[i].addEventListener('mouseover', ()=>{
+            product_hover[i].classList.add('list--hover');
+        });
+        product_hover[i].addEventListener('mouseout', ()=>{
+            product_hover[i].classList.remove('list--hover');
+        });
+        window.addEventListener('scroll', ()=>{
+            product_hover[i].classList.remove('list--hover');
+        })
+    }
+
+
 
 

@@ -87,7 +87,7 @@ article .list{
     background-color: rgb(24, 214, 24);
 }
 
-.container:hover > .list__item::before{
+.list--hover > .list__item::before{
     clip-path: circle(100%);
 }
 
@@ -114,7 +114,7 @@ article .list{
     top: 40%;
 }
 
-.list__item:hover img{
+.list--hover img{
     top: 10%;
     transform: rotate(-45deg);
 }
@@ -145,16 +145,16 @@ article .list{
     left: 5%;
 }
 
-.list:nth-child(2) .container:nth-child(1):hover img{
+.list:nth-child(2) .container:nth-child(1).list--hover img{
     top: -5%;
 }
 
-.list:nth-child(4) .container:nth-child(1):hover img{
+.list:nth-child(4) .container:nth-child(1).list--hover img{
     transform: rotate3d(.5,1,0,180deg);
     top: 20%;
 }
 
-.list:nth-child(4) .container:nth-child(3):hover img{
+.list:nth-child(4) .container:nth-child(3).list--hover img{
     transform: rotate3d(.5,1,0,180deg);
     top: 0;
 }
@@ -167,7 +167,7 @@ article .list{
     transition: .5s ease;
 }
 
-.list__item:hover .item__descrip{
+.list--hover .item__descrip{
     top: 60%;
     opacity: 1;
     visibility: initial;
