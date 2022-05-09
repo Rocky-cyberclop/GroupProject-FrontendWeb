@@ -276,3 +276,11 @@ if(window.localStorage.length !== 0){
     }, 1000);    
     
 }
+
+
+if(window.localStorage.length !== 0){
+    var btn_buy = document.querySelector('.btn-buy')
+    btn_buy.addEventListener('click',()=>{
+        alert('Đủ tiền không mà mua ?')
+    })
+}
