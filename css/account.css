@@ -179,6 +179,11 @@ main form{
     background-color: var(--text-pure);
 }
 
+.form-signup .form__body section:nth-child(4) input{
+    position: relative;
+    left: -2px;
+}
+
 .form-signin .form__body section:nth-child(5) input,
 .form-signup .form__body section:nth-child(5) input{
     margin: 20px 0;
@@ -320,15 +325,12 @@ main form{
         width: 90%;
     }
 
-    .form__body section{
-        width: 100%;
-        left: -7%;
-    }
-
     .form__body section a{
         position: absolute;
         left: 50%;
         width: 61%;
         top: -40%;
     }
+
+    
 }
