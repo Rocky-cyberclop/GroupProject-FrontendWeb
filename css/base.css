@@ -4,6 +4,7 @@
     --auxiliary-bold: #f672a0;
     --text: cornsilk;
     --text-1: aliceblue;
+    --text-pure: white;
     --float: #4877a0;
     --border: #333;
     --hover-size: #ccc;
@@ -16,6 +17,11 @@
     --item-product-color-red: #e91e63;
     --item-product-color-blue: #0389f4;
     --item-product-color-green: #9bdc28;
+    --footer-background: rgb(12, 12, 32);
+    --modal-background: rgba(39, 39, 63, 0.5);
+    --success: green;
+    --error: red;
+    --banner__icon: linear-gradient(90deg, rgb(170, 43, 170), rgb(59, 59, 228));
 }
 
 body{
