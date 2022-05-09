@@ -1,13 +1,120 @@
 
 footer{
-    margin-top: 20px;
+    margin-top: 100px;
+    background-color: var(--footer-background);
+    height: auto;
 }
 
-.list-social__item__link:hover{
+footer .container{
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+footer .container > section{
+    margin-top: 30px;
+    position: relative;
+}
+
+footer .container > section:nth-child(1){
+    width: 40%;
+}
+
+footer .container > section:nth-child(2){
+    width: 20%;
+}
+
+footer .container > section:nth-child(3){
+    width: 20%;
+}
+
+footer .container > section:nth-child(4){
+    width: 20%;
+}
+
+
+footer .container > section p{
+    color: var(--text);
+}
+
+footer .container > section > ul::before{
+    content: '';
+    background-color: var(--item-product-color-blue);
+    width: 3px;
+    height: 40px;
+    position: absolute;
+    left: 20px;
+}
+
+.footer__logo img{
     cursor: pointer;
-    color: var(--footer-a);
-    background-color: var(--auxiliary);
-    box-shadow: 1px 1px 5px 5px var(--auxiliary);
-    transition: .3s ease;
+}
+
+footer ul{
+    list-style: none;
+    font-weight: bold;
+    color: var(--hover-size);
+}
+
+footer ul > h4{
+    color: var(--text);
+}
+
+footer ul li > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--hover-size);
+}
+
+footer ul li > a:hover{
+    margin-left: 20px;
+}
+
+.footer__social .social{
+    position: relative;
+    left: -18%;
+    height: 50px;
+}
+
+.footer__social .social a{
+    font-size: 20px;
+}
+
+.footer__social .social a:hover{
+    margin: 10px 0;
+    background-color: var(--main);
+    box-shadow: 1px 1px 5px 5px var(--main);
     border-radius: 50px;
+    color: var(--text);
+}
+
+
+
+@media screen and (max-width: 860px) {
+
+    footer .container{
+        padding: 5%;
+    }
+
+    footer .container > section:nth-child(1){
+        width: 100%;
+    }
+    
+    footer .container > section:nth-child(2){
+        width: 50%;
+    }
+    
+    footer .container > section:nth-child(3){
+        width: 50%;
+    }
+    
+    footer .container > section:nth-child(4){
+        width: 70%;
+    }
+
+    section ul a{
+        font-size: 14px;
+    }
+
+    
 }

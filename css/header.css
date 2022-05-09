@@ -17,8 +17,9 @@ nav{
     width: 100%;
 }
 
-.logo{
-    padding: 10px;
+.logo img{
+    cursor: pointer;
+    border-radius: 20px;
 }
 
 nav > input{
@@ -36,6 +37,10 @@ nav label:hover{
 
 .nav__item{
     position: relative;
+}
+
+.nav__item__link{
+    font-weight: bold;
 }
 
 .nav__item__link:hover{
