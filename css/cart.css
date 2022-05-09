@@ -113,6 +113,11 @@ section .sum{
         font-size: 12px;
     }
 
+    .title__detail h5:nth-child(1){
+        position: relative;
+        right: 14%;
+    }
+
     .product__buy__del{
         display: block;
     }
