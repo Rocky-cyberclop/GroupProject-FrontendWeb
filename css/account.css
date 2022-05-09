@@ -1,0 +1,334 @@
+
+main form{
+    position: relative;
+}
+
+.banner{
+    width: 40%;
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.banner__des{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    flex-direction: column;
+    height: 100%;
+}
+
+.banner__des h1{
+    position: relative;
+    top: 10%;
+    font-weight: bold;
+}
+
+.banner__des p{
+    position: relative;
+    top: -25%;
+    font-weight: bold;
+}
+
+.banner__des i{
+    position: relative;
+    top: -30%;
+    left: 33%;
+    font-size: 60px;
+    font-weight: bolder;
+    color: var(--banner__icon);
+    width: 30%;
+    padding: 10px;
+    background: var(--banner__icon);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner__des i::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%; 
+    border: 5px solid transparent;
+    background: var(--banner__icon) border-box;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+  }
+
+.form-signin,
+.form-signup{
+    background-color: var(--text-1);
+    padding: 50px;
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+    position: relative;
+}
+
+.form-signup{
+    padding: 40px 0 0;
+}
+
+.form-signin .form__header h3,
+.form-signup .form__header h3{
+    color: var(--main);
+}
+
+.form-signin .form__header i,
+.form-signup .form__header i{
+    margin: 0 10px;
+    border: 1px solid var(--sticky-a);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.form-signin .form__header i:hover,
+.form-signup .form__header i:hover{
+    background-color: var(--main);
+    cursor: pointer;
+}
+
+.form-signin .form__header .wrap-signin-others,
+.form-signup .form__header .wrap-signin-others{
+    margin: 30px 0;
+}
+
+.signup-modal{
+    display: none;
+}
+
+.signup--open{
+    display: initial;
+}
+
+.form-signin .form__body section,
+.form-signup .form__body section{
+    margin: 20px;
+    position: relative;
+}
+
+.form-signin .form__body section input,
+.form-signup .form__body section input{
+    background-color: var(--hover-size);
+    outline: none;
+    border: none;
+}
+
+.form-signin .form__body section .icon,
+.form-signup .form__body section .icon{
+    margin-right: 20px;
+}
+
+.form-signin .form__body section:nth-child(1),
+.form-signin .form__body section:nth-child(2),
+.form-signup .form__body section:nth-child(1),
+.form-signup .form__body section:nth-child(2),
+.form-signup .form__body section:nth-child(3),
+.form-signup .form__body section:nth-child(4){
+    background-color: var(--hover-size);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.form-signin .form__body section:nth-child(3),
+.form-signin .form__body section:nth-child(4){
+    font-weight: bold;
+}
+
+.form-signin .form__body section:nth-child(2) .eye,
+.form-signup .form__body section:nth-child(3) .eye,
+.form-signup .form__body section:nth-child(4) .eye{
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+
+.form-signin .form__body section a{
+    color: var(--sticky-a);
+    text-decoration: none;
+}
+
+.form-signin .form__body section a:hover{
+    color: var(--main);
+}
+
+.form-signin .form__body section:nth-child(3) input{
+    position: relative;
+    left: -5px;
+}
+
+.form-signin .form__body section:nth-child(4){
+    margin: 40px 20px;
+}
+
+.form-signin .form__body section:nth-child(4) a{
+    border-bottom: 1px solid var(--border);
+    position: initial;
+}
+
+.form-signin .form__body section:nth-child(5) .sign-up{
+    background-color: var(--text-pure);
+}
+
+.form-signin .form__body section:nth-child(5) input,
+.form-signup .form__body section:nth-child(5) input{
+    margin: 20px 0;
+    width: 80%;
+    font-weight: bold;
+}
+
+.form-signin .form__body section:nth-child(6) .sign-up{
+    font-weight: bold;
+}
+
+.form-signin .form__body section:nth-child(6) .sign-up:hover{
+    color: var(--main);
+    cursor: pointer;
+}
+
+.form-signin .form__body section:nth-child(5) input,
+.form-signup .form__body section:nth-child(5) input{
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.form-signin .form__body section:nth-child(5) input:hover,
+.form-signin .form__body section:nth-child(5) input:focus,
+.form-signup .form__body section:nth-child(5) input:hover,
+.form-signup .form__body section:nth-child(5) input:focus{
+    background-color: var(--main);
+    cursor: pointer;
+}
+
+
+.signup-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 11111;
+}
+
+.modal__background{
+    background: var(--modal-background);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.active{
+    animation: fade-modal .3s;
+}
+
+.appear{
+    animation: appear .5s;
+}
+
+.form-signup section{
+    width: 90%;
+}
+
+.modal__close{
+    color: var(--sticky-a);
+    font-weight: bold;
+    border: 1px solid var(--border);
+    padding: 10px;
+    border-radius: 80%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.modal__close:hover{
+    background-color: var(--main);
+    cursor: pointer;
+}
+
+.message_signup{
+    position: absolute;
+    top: 95%;
+    font-weight: 100;
+}
+
+.form-signup .form__body section .message_signup i{
+    margin-right: 3px;
+}
+
+.success{
+    color: var(--success);
+}
+
+.error{
+    color: var(--error);
+}
+
+.success__border{
+    border: 1px solid var(--success);
+}
+
+.error__border{
+    border: 1px solid var(--error);
+}
+
+@keyframes fade-modal {
+    0%{
+        transform: translateY(-100%);
+    }
+    50%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@media screen and (max-width: 860px) {
+
+    .banner{
+        display: none;
+    }
+
+    .form-signin,
+    .form-signup{
+        width: 90%;
+    }
+
+    .form__body section{
+        width: 100%;
+        left: -7%;
+    }
+
+    .form__body section a{
+        position: absolute;
+        left: 50%;
+        width: 61%;
+        top: -40%;
+    }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+    
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="fontawesome-free-6.1.1-web/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome-free-6.1.1-web/css/brands.css" rel="stylesheet">
+    <link href="fontawesome-free-6.1.1-web/css/solid.css" rel="stylesheet">
+
+    <!-- update existing v5 CSS to use v6 icons and assets -->
+    <link href="fontawesome-free-6.1.1-web/css/v5-font-face.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/account.css">
+
+</head>
+<body>
+    <div class="loader display--flex justify-content--center text--center">
+        <div id="loader"></div>
+    </div>
+    <header class="container">
+        <nav class="display--flex text--enter">
+            <div class="logo text--bold"><a href="#main"><img src="product/logo.jpg" alt="" width="40px"></a></div>
+            <label for="checkbox-bar" class="align-item--center"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" name="" id="checkbox-bar">
+            <ul class="nav-list display--flex ul-list-style--none">
+                <li class="nav__item"><a href="index.html" class="nav__item__link display--block text-decoration--none text-color--white">HOME</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__item__link display--block text-decoration--none text-color--white">ABOUT US</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__item__link display--block text-decoration--none text-color--white">CONTACT</a></li>
+                <li class="nav__item"><a href="account.html" class="nav__item__link display--block text-decoration--none text-color--white">ACOUNT</a></li>
+                <li class="nav__item"><a href="products.html" class="nav__item__link display--block text-decoration--none text-color--white">PRODUCT</a></li>
+            </ul>
+            <div class="search">
+                <div class="search-box">
+                    <i class="search__icon fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="search__input" placeholder="Search something...">
+                </div>
+            </div>
+            <a href="cart.html" class="cart text-color--white display--block"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    <main class="display--flex justify-content--center align-item--center">
+        <div class="banner"><img src="product/banner.jpg" alt=""><div class="banner__des text--center display--flex justify-content--space-between"><h1>Sign up</h1><p>to use all features of the application</p><i class="fa-solid fa-check btn-gradient-2"></i></div></div>
+        <form action="/notexistURL" class="form-signin display--flex justify-content--center">
+            <div class="form-wrap">
+                <div class="form__header display--block">
+                    <h3 class="text--center">Sign in to ShoesShop</h3>
+                    <div class="wrap-signin-others text--center">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+                <div class="form__body">
+                    <section class="text--center"><i class="icon fa-solid fa-user"></i><input type="text" placeholder="Username" class="user" required></section>
+                    <section class="text--center"><i class="icon fa-solid fa-lock"></i></i><input type="password" placeholder="Password" class="password" required><i class="eye fa-solid fa-eye"></i></section>
+                    <section class="text--center"><input type="checkbox" id="remember"><label for="remember">Remember me</label></section>
+                    <section class="text--center"><a href="#">Forget password?</a></section>
+                    <section class="text--center"><input type="submit" value="Sign in" class="submit"></section>
+                    <section class="text--center"><div class="sign-up">Don't have an account ?</div></section>
+                </div>
+            </div>
+        </form>
+    </main>
+    <div class="signup-modal">
+        <div class="modal__background display--flex justify-content--center align-item--center active">
+            <form action="/notexistURL" class="form-signup display--flex justify-content--center appear">
+                <div class="form-wrap text--center text--bold">
+                    <div class="form__header">
+                        <h3 class="text--center">Create an account</h3>
+                        <div class="wrap-signin-others text--center">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-google-plus-g"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                    or use email to sign up
+                    <div class="form__body">
+                        <section class="text--center"><i class="icon fa-solid fa-user"></i><input type="text" placeholder="Username" class="user_signup" required><div class="message_signup"><i class="fa-solid"></i> </div></section>
+                        <section class="text--center"><i class="icon fa-solid fa-envelope"></i><input type="email" placeholder="Email" class="email_signup" required><div class="message_signup"><i class="fa-solid"></i> </div></section>
+                        <section class="text--center"><i class="icon fa-solid fa-lock"></i></i><input type="password" placeholder="Password" class="password_signup" required><i class="eye fa-solid fa-eye"></i><div class="message_signup"><i class="fa-solid"></i> </div></section>
+                        <section class="text--center"><i class="icon fa-solid fa-key"></i><input type="password" placeholder="Confirm password" class="password_signup" required><i class="eye fa-solid fa-eye"></i><div class="message_signup"><i class="fa-solid"></i> </div></section>
+                        
+                        <section class="display--flex justify-content--center"><input type="submit" value="Sign up" class="submit_signup"></section>
+                    </div>
+                </div>
+                <div class="modal__close">
+                    X
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="container display--flex">
+            <section class="footer__logo">
+                <h4><img src="product/logo.jpg" alt="" width="40px"></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nulla, quasi corporis cumque impedit omnis repellendus sint asperiores, at illo sunt quos provident? At, quae doloribus placeat voluptas officia rerum.</p>
+            </section>
+            <section class="footer__link">
+                <ul>
+                    <h4>Links</h4>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Get started</a></li>
+                    <li><a href="#">Potfolio</a></li>
+                    <li><a href="#">Corporate</a></li>
+                </ul>
+            </section>
+            <section class="footer__other">
+                <ul>
+                    <h4>Others</h4>
+                    <li><a href="#">Term of services</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Somethings</a></li>
+                </ul>
+            </section>
+            <section class="footer__social">
+                <ul>
+                    <h4>Social media</h4>
+                    <p>Follow us on social media</p>
+                    <ul class="social display--flex">
+                        <li><a href="#" class="display--block"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#" class="display--block"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" class="display--block"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a href="#" class="display--block"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </ul>
+            </section>
+        </div>
+    </footer>
+    <script src="js/loader.js" defer type="text/javascript"></script>
+    <script src="js/header.js" defer type="text/javascript"></script>
+    <script src="js/account.js" defer type="text/javascript"></script>
+
+</body>
+</html>
