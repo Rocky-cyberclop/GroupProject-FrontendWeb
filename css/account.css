@@ -62,7 +62,11 @@ main form{
         linear-gradient(#fff 0 0) padding-box, 
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
-  }
+}
+
+.form__header h3{
+    font-weight: bold;
+}
 
 .form-signin,
 .form-signup{
@@ -332,5 +336,9 @@ main form{
         top: -40%;
     }
 
+    .form-signin .form__body section{
+        width: 100%;
+        left: -8%;
+    }
     
 }
