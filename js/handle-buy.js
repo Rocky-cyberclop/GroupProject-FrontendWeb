@@ -1,3 +1,5 @@
+//Tran Anh Hao B2014653
+//11/5
 const products = {
     "sp001":{ "name":"Giày đỏ nike",
     "price":1000,
