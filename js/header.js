@@ -43,3 +43,13 @@ else{
         a_nav[i].classList.remove('text--center');
     }
 }
+
+
+
+function count(str){
+    var count=0;
+    for(let i=0; i<str.length; i++){
+        if(str[i]==' '||str[i]=='\n')count++
+    }
+    console.log(count+1)
+}

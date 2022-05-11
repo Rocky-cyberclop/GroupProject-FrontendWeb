@@ -1,0 +1,144 @@
+
+body{
+    position: relative;
+}
+.article-grid{
+    position: relative;
+    /* background-color: rgb(192, 240, 255); */
+    background-image: url(https://bizweb.dktcdn.net/100/332/765/themes/856636/assets/bg_page.png?1648701279603);
+    width: 800px;
+    height: 600px;
+    padding-left: 350px;
+    margin-top: 200px;
+}
+.name, .email, .message{
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    padding-left: 30px;
+    color: rgb(6, 6, 6);
+    text-align:justify;
+}
+.send{
+    color: white;
+    background-color: rgb(251, 88, 88);
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+}
+.name, .email{
+    width: 400px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.name{
+    margin-bottom: 0;
+}
+.display-text{
+    color: rgb(187, 187, 187);
+    padding-bottom: 40px;
+}
+.display-grid-first{
+    position: absolute;
+    top: 40px;
+}
+.display-grid-second{
+    background-color:rgb(251, 88, 88);
+    position: absolute;
+    top: 50px;
+    left: -100px;
+    width: 350px;
+    height: 500px;
+    color: rgb(223, 216, 216);
+}
+.contact{
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+.contact-position, .contact-number-phone, .contact-email, .contact-fax{
+    display: flex;
+    padding-top: 30px;
+}
+.contact-text{
+    margin: 0px 0px 0px 20px;
+}
+.contact-icon{
+    margin-top: 5px;
+}
+.contact-text-td{
+    margin: 0px 0px 0px 20px;
+}
+.usernamefeedback{
+    padding-left: 20px;
+    color: rgb(230, 18, 18);
+    
+}
+.a{
+    font-size: 40px;
+    color: red;
+    margin: 20px 0 0 380px;
+    display: none;
+}
+.nav__overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0 , 0, 0, 0.3);
+    display: none;
+}
+.display-grid-second--mobile{
+    display: none;
+}
+@media (max-width:1023px) {
+    /* For tablets: */
+    .article-grid{
+        padding-left: 34%;
+        width: 70%;
+        border-radius: 10px;
+        margin-top: 17%;
+    }
+    .display-grid-first{
+    }
+     .display-grid-second{
+        left: -5%;
+        width: 50%;
+    } 
+    .form{
+        width:  100%;
+    }
+    .name, .email, .message{
+        width: 95%;
+    }
+    .contact{
+        margin-top: 50px;
+        margin-left: 10%;
+    
+    }
+   
+  }
+  @media (max-width:740px) {
+    /* For mobile phones: */
+    .article-grid{
+        padding: 4%;
+        width: 90%;
+        /* height: 70%; */
+        border-radius: 10px;
+        margin-top: 35%;
+    }
+    .display-grid-second{
+        display: none;
+    }
+    .form{
+        width: 100%;
+    }
+    .name, .email, .message{
+        width: 95%;
+    }
+    
+  }

@@ -1,0 +1,133 @@
+
+  /* header{
+    background-color: #8FBC8F;
+  }
+  body{
+    background-color: white;
+  }
+  footer{
+    background-color: #8FBC8F;
+  } */
+  main{
+    margin-top: 0;
+  }
+.title_name_newshoes{
+    text-align: center;
+    color: rgb(13, 238, 61);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+  }
+.picture{
+    margin-top: -55px;
+    margin-left: -45px;
+  }
+#picture_newshoes{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+.parent{
+  width:100%;
+  display:grid;
+  grid-template-rows: 20% auto;
+  grid-template-areas: "header"
+                       "main "
+}
+.grid_main{
+  grid-area: main;
+}
+.grid_header{
+  grid-area: header;
+}
+.grid_main{
+  display: grid;
+  grid-template-columns:auto auto;
+  grid-template-areas: 
+    "img ccontent";
+}
+.grid_newshoes{
+    grid-area : img;
+  }
+.grid_intrucduce_inforshop{
+    grid-area : ccontent;
+    text-align: center;
+}
+.content_intrucduce_newshoes{
+  position: relative;
+  top:10px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgba(255, 255, 255, 0.91);
+  text-align: justify;
+  font-size: 20px;
+  vertical-align: middle;
+  margin:0px 50px;
+}
+.divcontent_content_inforshop{
+  position: relative;
+  top :0px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgba(255, 255, 255, 0.91);
+  text-align: justify;
+  font-size: 20px;
+  vertical-align: middle;
+  margin:0px 10px;
+
+}
+.title_nameshop{
+  font-size: 50px;
+  font-family:fantasy;
+  color: rgb(239, 59, 59); 
+}
+@media screen and (max-width: 860px) {
+  main{
+    margin-top: -170px;
+  }
+
+  .grid_main{
+    display: grid;
+    grid-template-rows:auto auto;
+    grid-template-areas:"img"
+                        "ccontent";  
+  }
+  .grid_newshoes{
+      grid-area : img;
+    }
+  .grid_intrucduce_inforshop{
+      grid-area : ccontent;
+      text-align: center;
+  }
+  .title_name_newshoes{
+    color: rgb(13, 238, 61);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+  }
+  .content_intrucduce_newshoes{
+    position: relative;
+    top:10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.91);
+    text-align: justify;
+    font-size: 15px;
+    vertical-align: middle;
+    margin:10px;
+}
+.divcontent_content_inforshop{
+  position: relative;
+  top :0px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgba(255, 255, 255, 0.91);
+  text-align: justify;
+  font-size: 15px;
+  vertical-align: middle;
+  margin:0px 10px;
+}
+.title_nameshop{
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(239, 59, 59); 
+}
+.picture{
+  margin-top: -20px;
+  margin-left:5px;
+}
+}
