@@ -49,6 +49,9 @@ const products = {
     function add_cart(code){
         if(typeof window.localStorage[code] === 'undefined'){
             window.localStorage.setItem(code,1);
+            var quantity = document.querySelector('#quantity');
+            quantity.classList.add('quantity');
+            quantity.textContent = window.localStorage.length;
         }
         else{
             const quantity = parseInt(window.localStorage.getItem(code));

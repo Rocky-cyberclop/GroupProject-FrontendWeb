@@ -90,13 +90,24 @@ nav label:hover{
     background-color: var(--auxiliary-bold);
     height: 100%;
     border-radius: 50%;
+    position: relative;
 }
 
 .cart:hover{
     color: var(--text);
     background-color: var(--auxiliary);
-    overflow: hidden;
     box-shadow: 1px 1px 5px 5px var(--auxiliary);
+}
+
+.cart .quantity{
+    position: absolute;
+    top: -20%;
+    right: -30%;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--text);
+    color: var(--sticky-a);
+    font-weight: bold;
 }
 
 .sticky nav{

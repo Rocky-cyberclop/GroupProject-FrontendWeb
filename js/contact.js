@@ -40,6 +40,8 @@ function checkUsername() {                             // Declare function
 }
 // click send thi thong bao ra man hinh
 function Send(){
+    checkUsername();
+    checkEmail();
     if( checkUsername()==1 && checkEmail()==1){
         alert('Cảm ơn quý khách đã gửi liên hệ cho chúng tôi!');
     }

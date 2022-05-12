@@ -1,6 +1,6 @@
 //Tran Anh Hao B2014653
 //11/5
-
+// Add some scroll animation
 window.addEventListener('scroll', function(){
     var header = document.getElementsByTagName('header');
     
@@ -46,7 +46,7 @@ else{
 }
 
 
-
+// Some func that i make to do private job
 function count(str){
     var count=0;
     for(let i=0; i<str.length; i++){
@@ -54,3 +54,12 @@ function count(str){
     }
     console.log(count+1)
 }
+
+
+window.addEventListener('load', ()=>{
+    if(window.localStorage.length!==0){
+        var quantity = document.querySelector('#quantity');
+        quantity.classList.add('quantity');
+        quantity.textContent = window.localStorage.length;
+    }
+});
