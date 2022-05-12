@@ -95,6 +95,18 @@ body{
 .display-grid-second--mobile{
     display: none;
 }
+.error__border{
+    border: 1px solid red;
+}
+.error__text{
+    color: red;
+}
+.success__border{
+    border: 1px solid green;
+}
+.success__text{
+    color: green;
+}
 @media (max-width:1023px) {
     /* For tablets: */
     .article-grid{

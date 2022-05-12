@@ -58,12 +58,16 @@
                         <tr>
                             <td>
                                 <input type="text" placeholder="Your Name" class="name" id="username" onblur="checkUsername()">
-                                <div id="feedback"></div>
+                                <div id="feedback__user"></div>
                                 <span class="usernamefeedback"></span>
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="text" placeholder="Your Email" class="email" id="mail" onblur="checkEmail()"></td>
+                            <td>
+                                <input type="text" placeholder="Your Email" class="email" id="mail" onblur="checkEmail()">
+                                <div id="feedback"></div>
+                                <span class="emailfeedback"></span>
+                            </td>
                         </tr>
                         <tr>
                             <td colspan="2"><textarea name="" id="" cols="50" rows="7" placeholder="Typing your massage here..." class="message"></textarea></td>

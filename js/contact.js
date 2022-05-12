@@ -2,13 +2,21 @@
 // 5/10
 // kiểm tra username  phải lớn hơn 5 ký tự
 function checkUsername() {                             // Declare function
-    var elMsg = document.getElementById('feedback');     // Get feedback element
+    var elMsg = document.getElementById('feedback__user');     // Get feedback element
     var elUsername = document.getElementById('username');// Get username input
     if (elUsername.value.length < 5) {                   // neu <5 ky tu thi thong bao loi
         elMsg.textContent='Tên liên hệ phải lớn hơn 5 ký tự!';
+        elMsg.classList.add('error__text');
+        elMsg.classList.remove('success__text');
+        elUsername.classList.add('error__border');
+        elUsername.classList.remove('success__border');
         return 0;
     } else {                                              // Otherwise
         elMsg.textContent = '';   
+        elMsg.classList.remove('error__text');
+        elMsg.classList.add('success__text');
+        elUsername.classList.remove('error__border');
+        elUsername.classList.add('success__border');
         return 1;                          // nguoc lai thi ok
     }
   }
@@ -19,10 +27,14 @@ function checkUsername() {                             // Declare function
     if (!filter.test(email.value)) { 
              alert('Vui long nhap dia chi email hop le.\nExample@gmail.com');
              email.focus; 
+             email.classList.add('error__border');
+             email.classList.remove('success__border');
              return 0; 
     }
     else{ 
              alert.textContent='Email hop le.'; 
+             email.classList.remove('error__border');
+             email.classList.add('success__border');
              return 1;
     } 
 }
