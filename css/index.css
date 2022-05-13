@@ -21,6 +21,10 @@
     margin-top: -55px;
     margin-left: -45px;
   }
+  section h1{
+    color: var(--text-2) !important;
+    font-style: normal !important;
+  }
 #picture_newshoes{
     width: 100%;
     height: 100%;

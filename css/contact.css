@@ -20,14 +20,15 @@ body{
     text-align:justify;
 }
 .send{
-    color: white;
-    background-color: rgb(251, 88, 88);
+    color: var(--sticky-a);
+    background-color: var(--float) !important;
     border-radius: 15px;
     width: 100px;
     height: 30px;
     border: none;
     outline: none;
     margin-top: 20px;
+    font-weight: bold;
 }
 .name, .email{
     width: 400px;
@@ -38,21 +39,25 @@ body{
     margin-bottom: 0;
 }
 .display-text{
-    color: rgb(187, 187, 187);
+    color: var(--sticky-a);
     padding-bottom: 40px;
 }
 .display-grid-first{
     position: absolute;
     top: 40px;
 }
+form input,
+form textarea{
+    background-color: var(--hover-size) !important;
+}
 .display-grid-second{
-    background-color:rgb(251, 88, 88);
+    background-color:var(--float);
     position: absolute;
     top: 50px;
     left: -100px;
     width: 350px;
     height: 500px;
-    color: rgb(223, 216, 216);
+    color: var(--sticky-a);
 }
 .contact{
     margin-top: 50px;

@@ -19,7 +19,7 @@ article .list{
     overflow: hidden;
     border-radius: 20px;
     background-color: var(--item-product);
-    box-shadow: 5px 5px 5px 3px var(--border);
+    box-shadow: 1px 1px 6px 1px var(--sticky-a);
 }
 
 .list__item > p{
@@ -44,7 +44,7 @@ article .list{
 }
 
 .list:nth-child(1) .container:nth-child(2) .list__item::before{
-    background-color: rgb(63, 63, 221);
+    background: linear-gradient(180deg, orange,blue);
 }
 
 .list:nth-child(1) .container:nth-child(3) .list__item::before{

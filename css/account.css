@@ -97,7 +97,7 @@ main form{
 
 .form-signin .form__header i:hover,
 .form-signup .form__header i:hover{
-    background-color: var(--main);
+    background-color: var(--float);
     cursor: pointer;
 }
 
@@ -162,7 +162,7 @@ main form{
 }
 
 .form-signin .form__body section a:hover{
-    color: var(--main);
+    color: var(--float);
 }
 
 .form-signin .form__body section:nth-child(3) input{
@@ -200,7 +200,7 @@ main form{
 }
 
 .form-signin .form__body section:nth-child(6) .sign-up:hover{
-    color: var(--main);
+    color: var(--float);
     cursor: pointer;
 }
 
@@ -216,7 +216,7 @@ main form{
 .form-signin .form__body section:nth-child(5) input:focus,
 .form-signup .form__body section:nth-child(5) input:hover,
 .form-signup .form__body section:nth-child(5) input:focus{
-    background-color: var(--main);
+    background-color: var(--float);
     cursor: pointer;
 }
 
@@ -263,7 +263,7 @@ main form{
 }
 
 .modal__close:hover{
-    background-color: var(--main);
+    background-color: var(--float);
     cursor: pointer;
 }
 

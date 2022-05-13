@@ -1,18 +1,19 @@
 :root{
-    --main: #355c7d;
+    --main: #490B3D;
     --auxiliary: #f8b195;
     --auxiliary-bold: #f672a0;
     --text: cornsilk;
     --text-1: aliceblue;
+    --text-2: #F4DB7D;
     --text-pure: white;
-    --float: #4877a0;
+    --float: #D48166;
     --border: #333;
     --hover-size: #ccc;
-    --sticky-header: #6c5b7b;
+    --sticky-header: #7D3780;
     --sticky-a: black;
     --hover-sticky-a: #866f99;
     --footer-a: rgb(37, 28, 28);
-    --item-product: rgb(67, 102, 155);
+    --item-product: #69205b;
     --item-product-logo: rgba(255, 255, 255, 0.04);
     --item-product-color-red: #e91e63;
     --item-product-color-blue: #0389f4;

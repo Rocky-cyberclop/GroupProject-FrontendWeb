@@ -117,6 +117,9 @@ main{
     height: 80%;
     
 } 
+main h2{
+    color: var(--text-2);
+}
 @media (max-width:1023px) {
     /* For tablets: */
     body{
